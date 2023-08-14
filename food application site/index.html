@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Order Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Food Order Application</h1>
+        <div class="menu">
+            <h2>Menu</h2>
+            <ul id="menu-list">
+                <li>
+                    <span>Pizza</span>
+                    <span>Rs.203</span>
+                    <button class="add-btn" onclick="addToCart('Pizza', 203)">Add</button>
+                </li>
+                <li>
+                    <span>Burger</span>
+                    <span>Rs.102</span>
+                    <button class="add-btn" onclick="addToCart('Burger', 102)">Add</button>
+                </li>
+                <li>
+                    <span>Pasta</span>
+                    <span>Rs.145</span>
+                    <button class="add-btn" onclick="addToCart('Pasta', 145)">Add</button>
+                </li>
+                <li>
+                    <span>sweet</span>
+                    <span>Rs.199</span>
+                    <button class="add-btn" onclick="addToCart('sweet', 199)">Add</button>
+                </li>
+                <li>
+                    <span>Meals</span>
+                    <span>Rs.149</span>
+                    <button class="add-btn" onclick="addToCart('Meals', 149)">Add</button>
+                </li>
+            </ul>
+        </div>
+        <div class="cart">
+            <h2>Cart</h2>
+            <ul id="cart-list"></ul>
+            <p>Total: Rs<span id="total">0</span></p>
+            <button class="checkout-btn" onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
